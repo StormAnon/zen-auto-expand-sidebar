@@ -21,9 +21,9 @@
     },
     {
         "property": "mod.autoexpand.expanded_width",
-        "label": "Width of the expanded sidebar (use 350px minimum if using tabs on the right)",
+        "label": "Width of the expanded sidebar (limits the minimum as 350px if using tabs on the right)",
         "type": "string",
-        "defaultValue": "320px"
+        "defaultValue": "250px"
     },
     {
         "property": "mod.autoexpand.collapsed_width",
@@ -33,19 +33,19 @@
     },
     {
         "property": "mod.autoexpand.animation_duration",
-        "label": "Expanding animation duration, in ms (default: 200ms)",
+        "label": "Expanding animation duration, in ms (default: 150ms)",
         "type": "string",
         "defaultValue": "150ms"
     },
     {
         "property": "mod.autoexpand.animation_delay",
-        "label": "Delay before expanding after hover (default: 300ms)",
+        "label": "Delay before expanding after hover (default: 0ms)",
         "type": "string",
         "defaultValue": "0ms"
     },
     {
         "property": "mod.autoexpand.collapse_delay",
-        "label": "Delay before collapsing (default: 200ms)",
+        "label": "Delay before collapsing (default: 100ms)",
         "type": "string",
         "defaultValue": "100ms"
     },

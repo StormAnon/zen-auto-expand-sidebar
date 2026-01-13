@@ -20,7 +20,7 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
         --expanded-tab-bar-width: clamp(350px, var(--mod-autoexpand-expanded_width),9999px);
       }
       @media not (-moz-bool-pref: "zen.tabs.vertical.right-side"){
-        --expanded-tab-bar-width: var(--mod-autoexpand-expanded_width);
+        --expanded-tab-bar-width: clamp(160px, var(--mod-autoexpand-expanded_width),9999px);
       }
 
       /*Hide top workspaces button*/
