@@ -21,7 +21,7 @@
     },
     {
         "property": "mod.autoexpand.expanded_width",
-        "label": "Width of the expanded sidebar (use 320px minimum if using tabs on the right)",
+        "label": "Width of the expanded sidebar (use 350px minimum if using tabs on the right)",
         "type": "string",
         "defaultValue": "320px"
     },
@@ -35,19 +35,19 @@
         "property": "mod.autoexpand.animation_duration",
         "label": "Expanding animation duration, in ms (default: 200ms)",
         "type": "string",
-        "defaultValue": "200ms"
+        "defaultValue": "150ms"
     },
     {
         "property": "mod.autoexpand.animation_delay",
         "label": "Delay before expanding after hover (default: 300ms)",
         "type": "string",
-        "defaultValue": "300ms"
+        "defaultValue": "0ms"
     },
     {
         "property": "mod.autoexpand.collapse_delay",
         "label": "Delay before collapsing (default: 200ms)",
         "type": "string",
-        "defaultValue": "200ms"
+        "defaultValue": "100ms"
     },
     {
         "property": "mod.autoexpand.fade_sleeping_tabs",
@@ -60,12 +60,6 @@
         "label": "Hide top workspace indicator",
         "type": "checkbox",
         "defaultValue": true
-    },
-    {
-        "property": "mod.autoexpand.visible_scroll",
-        "label": "Make the tabs scroll bar visible in the collapsed state, when you have many tabs open - not compatible with superpins",
-        "type": "checkbox",
-        "defaultValue": false
     },
     {
         "property": "mod.autoexpand.essential_align",
