@@ -1,5 +1,5 @@
 # Zen Auto Expand Sidebar
-![](./image.png)
+![](./screenshot.png)
 
 Zen mod to auto expand the sidebar on hover.
 
