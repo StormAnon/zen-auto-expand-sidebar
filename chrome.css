@@ -505,6 +505,9 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
         padding-right: 80px !important;
         padding-left: 30px !important;
         }
+        #navigator-toolbox[zen-right-side="true"] #zen-toggle-compact-mode {
+        margin-inline-start: auto;
+        }
         /*}*/
         #navigator-toolbox:not([zen-right-side="true"]) ~ #zen-appcontent-wrapper #nav-bar{
         padding-left: 70px !important;
@@ -658,7 +661,7 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
       #navigator-toolbox[zen-right-side="true"]{
       .tabbrowser-tab[selected="true"]{
         .tab-label {
-          transform: translateX(25px) !important;
+          transform: translateX(19px) !important;
         }
         .tab-close-button {
           opacity: 100% !important;
