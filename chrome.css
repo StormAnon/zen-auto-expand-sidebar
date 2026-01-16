@@ -497,15 +497,15 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
       @media not all and (-moz-bool-pref: "zen.view.use-single-toolbar") {
         /*#zen-main-app-wrapper[zen-compact-mode="false"]{*/
         #navigator-toolbox[zen-right-side="true"] ~ #zen-appcontent-wrapper #nav-bar{
-        padding-right: 130px !important;
-        padding-left: 30px !important;
+        padding-right: 115px !important;
+        padding-left: 0px !important;
         }
         #navigator-toolbox[zen-right-side="true"] #zen-toggle-compact-mode {
         margin-inline-start: auto;
         }
         /*}*/
         #navigator-toolbox:not([zen-right-side="true"]) ~ #zen-appcontent-wrapper #nav-bar{
-        padding-left: 50px !important;
+        padding-left: 7px !important;
         }
         /*makes nav buttons clickable on left sided sidebar*/
         #zen-main-app-wrapper[zen-compact-mode="false"]{
