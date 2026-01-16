@@ -4,12 +4,6 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
   @media not (-moz-bool-pref: "zen.view.compact.enable-at-startup"),
   not (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
 
-    body:has(#theme-Zen-Auto-Expand-Sidebar[mod-autoexpand-performance-mode="potato"]) {
-      #zen-media-focus-button{
-      //transform: scaleY(2) !important;
-      }
-    }
-
     :root:not([sizemode="fullscreen"]){
       --transition-duration: var(--mod-autoexpand-animation_duration);
       --transition-delay: var(--mod-autoexpand-animation_delay);
