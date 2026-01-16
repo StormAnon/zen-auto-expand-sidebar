@@ -644,7 +644,7 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
       [flash-popup],
       :has(toolbarbutton[open="true"]:not(#zen-sidepanel-button), #urlbar[open])
       )) {
-        #zen-sidebar-top-buttons-customization-target > *:not(#back-button){
+        #zen-sidebar-top-buttons-customization-target > *:not(#back-button, #zen-toggle-compact-mode){
         opacity: 0 !important;
         }
       }
