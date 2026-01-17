@@ -758,6 +758,7 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
           transition: clip-path 0ms ease-in-out var(--transition-delay-after) !important;
         }
         &:hover .tab-close-button{
+          transform: translateX(2px) !important;
           position: relative !important;
           opacity: 100% !important;
         }
