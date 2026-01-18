@@ -201,6 +201,9 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
         .tab-group-label{
           opacity: 100%;
         }
+        .tab-group-container tab:not([zen-essential]) .tab-background{
+          width: inherit !important;
+        }
         zen-folder .tab-group-container{
           transform: translateX(0px);
           .tabbrowser-tab{
