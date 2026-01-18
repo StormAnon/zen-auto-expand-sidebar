@@ -201,7 +201,7 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
         .tab-group-label{
           opacity: 100%;
         }
-        .tab-group-container{
+        zen-folder .tab-group-container{
           transform: translateX(0px);
           .tabbrowser-tab{
             width: calc(var(--expanded-tab-bar-width) - 28px) !important;
@@ -218,13 +218,13 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
       .tab-group-label{
         opacity: 0%;
       }
-      .tab-group-container{
+      zen-folder .tab-group-container{
         transform: translateX(-14px);
         padding-right: 17px;
       }
       }
       #navigator-toolbox[zen-right-side="true"]{
-      .tab-group-container{
+      zen-folder .tab-group-container{
         transform: translateX(14px);
         padding-left: 17px;
       }
