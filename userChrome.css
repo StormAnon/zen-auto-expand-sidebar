@@ -23,7 +23,7 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
 
     :root:not([sizemode="fullscreen"]){
 
-      --transition-duration: 200ms;
+      --transition-duration: 150ms;
       --transition-delay: 0ms;
       --transition-delay-after: 100ms;
       --expanded-tab-bar-width-a: 250px;
@@ -76,12 +76,13 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
       }
 
       /*Elements with smooth transitions that are animated*/
-      #navigator-toolbox, #tabbrowser-tabbox, #urlbar:not([focused]), tab:is([zen-essential]), .tab-group-container{
-      transition: clip-path var(--transition-duration) ease-in-out var(--transition-delay-smooth),
-      transform var(--transition-duration) ease-in-out var(--transition-delay-smooth),
-      opacity var(--transition-duration) ease-in-out var(--transition-delay-smooth),
-      width var(--transition-duration) ease-in-out var(--transition-delay-smooth),
-      max-height var(--transition-duration) ease var(--transition-delay-smooth) !important;
+      #navigator-toolbox, #tabbrowser-tabbox, #urlbar:not([focused]), tab:is([zen-essential]),
+      .tab-group-container, #tabbrowser-tabpanels{
+        transition: clip-path var(--transition-duration) ease-in-out var(--transition-delay-smooth),
+        transform var(--transition-duration) ease-in-out var(--transition-delay-smooth),
+        opacity var(--transition-duration) ease-in-out var(--transition-delay-smooth),
+        width var(--transition-duration) ease-in-out var(--transition-delay-smooth),
+        max-height var(--transition-duration) ease var(--transition-delay-smooth) !important;
       }
 
       #navigator-toolbox:has(#urlbar[open]){
@@ -247,6 +248,12 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
       /*initial clip path state*/
       #tabbrowser-tabbox {
       clip-path: inset(-2px -2px -2px -2px round 5px);
+      }
+
+      @media (-moz-bool-pref: "zen.tabs.vertical.right-side"){
+        #zen-appcontent-wrapper #tabbrowser-tabbox[zen-split-view="true"] #tabbrowser-tabpanels {
+        clip-path: inset(-2px -2px -2px -2px round 5px);
+        }
       }
 
       /*Adds space for the tab icons*/
