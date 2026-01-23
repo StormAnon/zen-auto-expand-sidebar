@@ -54,6 +54,13 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
         }
       }
 
+      /*Removes the pinned tabs thin line separator*/
+      @media (-moz-bool-pref: "mod.autoexpand.remove_line_separator") {
+        .pinned-tabs-container-separator{
+          display: none !important;
+        }
+      }
+
       /*Elements with "Instant" transitions. These are delayed dynamically depending on if it's hover/unhover, and are never animated to improve performance.*/
       @media (-moz-pref("mod.autoexpand.performance_mode", "fancy")) {
         #zen-media-controls-toolbar, #zen-appcontent-wrapper,

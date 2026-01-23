@@ -62,6 +62,12 @@
         "defaultValue": true
     },
     {
+        "property": "mod.autoexpand.remove_line_separator",
+        "label": "Remove the thin line separator under the pinned tabs",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
         "property": "mod.autoexpand.essential_align",
         "label": "Make the selected essential tab be placed in the first position, visible when collapsed",
         "type": "checkbox",
