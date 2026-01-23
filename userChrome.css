@@ -58,6 +58,11 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
         opacity: 0.5 !important;
       }
 
+      /*Removes the pinned tabs thin line separator*/
+      .pinned-tabs-container-separator{
+        //display: none;
+      }
+
       /*Elements with "Instant" transitions. These are delayed dynamically depending on if it's hover/unhover, and are never animated to improve performance.*/
       #zen-sidebar-foot-buttons > *:not(#zen-workspaces-button), #zen-media-controls-toolbar, #zen-appcontent-wrapper,
       vbox.zen-workspace-tabs-section.zen-workspace-pinned-tabs-section,
