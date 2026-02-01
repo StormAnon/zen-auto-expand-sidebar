@@ -39,10 +39,22 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
       -moz-window-dragging: no-drag; /* Disables window dragging */
       }
 
-      /*Moves selected essential tab to the first position, ensuring it's visible*/
-      @media (-moz-bool-pref: "mod.autoexpand.essential_align") {
-        #navigator-toolbox:not([zen-has-hover]) tab:is([zen-essential], [pinned]):is([selected]){
-        order: -1;
+      /*collapses essentials when not hovered*/
+      tab:is([zen-essential]){
+        width: calc(var(--collapsed-tab-bar-width) - 5px) !important;
+      }
+      @media (-moz-bool-pref: "mod.autoexpand.essentials_vertical") {
+        .zen-essentials-container {
+          grid-template-columns: 1fr !important;
+          max-height: 180px;
+          overflow-y: auto !important;
+          min-width: 10px !important;
+          //width: calc(var(--expanded-tab-bar-width) - 0px) !important;
+        }
+        tab:is([zen-essential]){
+          .tab-background{
+            min-height: 35px !important;
+          }
         }
       }
 
@@ -533,11 +545,6 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
       }
       #navigator-toolbox[zen-right-side="true"] #urlbar:not([focused=""]){
       clip-path: inset(0 0 0 calc(var(--expanded-tab-bar-width) - var(--collapsed-tab-bar-width) - 4px) round 10px) !important;
-      }
-
-      /*collapses essentials when not hovered*/
-      tab:is([zen-essential]){/*, [pinned]){ //superpins*/
-        width: calc(var(--collapsed-tab-bar-width) - 5px) !important;
       }
 
       /*aligns pinned tab favicons*/
