@@ -1,3 +1,14 @@
+/*scrollbox {
+ *  width: var(--my-width) !important;
+ *  transition: width 0ms ease-in-out calc(var(--transition-duration) + 200ms);
+ * }
+ *
+ * scrollbox:hover {
+ *  width: var(--my-width) !important;
+ *  transition: width 0ms ease-in-out var(--transition-delay);
+ * }
+ */
+
 /*Makes so that the mod works with compact mode in all it's forms, allowing the use of the mod with "hide top bar only"*/
 @media not (-moz-bool-pref: "zen.view.compact.enable-at-startup"),
 not (-moz-bool-pref: "zen.view.use-single-toolbar") {
@@ -34,6 +45,23 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
       //order: -1; // Move it to the front without breaking layout
       //grid-column: 1 !important;
       }
+
+      /*collapses essentials when not hovered*/
+      tab:is([zen-essential]){
+        width: calc(var(--collapsed-tab-bar-width) - 5px) !important;
+      }
+      /*.zen-essentials-container {
+       *            grid-template-columns: 1fr !important;
+       *            max-height: 180px;
+       *            overflow-y: auto !important;
+       *            min-width: 10px !important;
+       *            //width: calc(var(--expanded-tab-bar-width) - 0px) !important;
+    }
+    tab:is([zen-essential]){
+    .tab-background{
+    min-height: 35px !important;
+    }
+    }*/
 
       /*fades sleeping tabs*/
       .tabbrowser-tab[pending="true"]:not([zen-essential]) {
@@ -460,11 +488,6 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
       }
       #navigator-toolbox[zen-right-side="true"] #urlbar:not([focused=""]){
       clip-path: inset(0 0 0 calc(var(--expanded-tab-bar-width) - var(--collapsed-tab-bar-width) - 4px) round 10px) !important;
-      }
-
-      /*collapses essentials when not hovered*/
-      tab:is([zen-essential]){/*, [pinned]){ //superpins*/
-        width: calc(var(--collapsed-tab-bar-width) - 5px) !important;
       }
 
       /*aligns pinned tab favicons*/
