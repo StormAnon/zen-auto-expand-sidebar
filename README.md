@@ -32,8 +32,8 @@ Zen mod to auto expand the sidebar on hover.
 
 ## Custimization Options
 In the mods menu, clicking on the gear icon will give you several customization options:
+- Make all essential tabs visible in the collapsed sidebar
 - Fade unloaded (sleeping) tabs
 - Control Collapsed and expanded widths
 - Control the delay to expand and animation Speeds
 - Hide or show the workspace indicator
-- Automatically reorder Essential tabs to keep displaying of the active tab
