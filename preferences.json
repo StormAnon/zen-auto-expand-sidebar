@@ -50,6 +50,12 @@
         "defaultValue": "100ms"
     },
     {
+        "property": "mod.autoexpand.essentials_vertical",
+        "label": "Makes all essentials visible in the minimized sidebar",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
         "property": "mod.autoexpand.fade_sleeping_tabs",
         "label": "Slightly fade Unloaded (Sleeping) Tabs",
         "type": "checkbox",
@@ -64,12 +70,6 @@
     {
         "property": "mod.autoexpand.remove_line_separator",
         "label": "Remove the thin line separator under the pinned tabs",
-        "type": "checkbox",
-        "defaultValue": false
-    },
-    {
-        "property": "mod.autoexpand.essential_align",
-        "label": "Make the selected essential tab be placed in the first position, visible when collapsed",
         "type": "checkbox",
         "defaultValue": false
     }
