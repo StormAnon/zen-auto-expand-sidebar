@@ -41,15 +41,20 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
         width: calc(var(--collapsed-tab-bar-width) - 5px) !important;
       }
       /*.zen-essentials-container {
-       *            grid-template-columns: 1fr !important;
-       *            max-height: 180px;
-       *            overflow-y: auto !important;
-       *            min-width: 10px !important;
-       *            //width: calc(var(--expanded-tab-bar-width) - 0px) !important;
+       *         grid-template-columns: 1fr !important;
+       *         max-height: 180px;
+       *         overflow-y: auto !important;
+       *         min-width: 10px !important;
+       *         //width: calc(var(--expanded-tab-bar-width) - 0px) !important;
     }
     tab:is([zen-essential]){
     .tab-background{
     min-height: 35px !important;
+    }
+    tab[zen-glance-tab="true"]{
+    .tab-background{
+    min-height: inherit !important;
+    }
     }
     }*/
 
