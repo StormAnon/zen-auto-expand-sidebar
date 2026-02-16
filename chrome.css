@@ -57,6 +57,11 @@ not (-moz-bool-pref: "zen.view.use-single-toolbar") {
             min-height: 35px !important;
           }
         }
+        tab[zen-glance-tab="true"]{
+          .tab-background{
+            min-height: inherit !important;
+          }
+        }
       }
 
       /*fades sleeping tabs*/
